@@ -1,0 +1,21 @@
+
+    <table style="width:100%" >
+
+        <div>
+            <tr>
+                <th>sl number</th>
+                <th> item name</th>
+                <th> decscription</th>
+                
+            </tr>
+            {% for object in object_list %}
+            <tr>
+                <td>{{ object.slnumber }}</td>
+                <td>{{ object.itemname }}</td>
+                <td>{{ object.description }}</td>
+                
+            </tr>
+            {% endfor %}
+        </div>
+    </table>
+        

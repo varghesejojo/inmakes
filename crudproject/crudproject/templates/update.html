@@ -1,0 +1,14 @@
+
+<form method="post">
+  {% csrf_token %}
+  <label for="slno">Serial Number:</label>
+  <input type="text" name="slnumber" value="{{ task1.slnumber }}" required><br><br>
+  
+  <label for="itemname">Item Name:</label>
+  <input type="text" name="itemname" value="{{ task1.itemname }}" required><br><br>
+  
+  <label for="description">Description:</label>
+  <textarea name="description" required>{{ task1.description }}</textarea><br><br>
+  
+  <input type="submit" value="Update">
+</form>
